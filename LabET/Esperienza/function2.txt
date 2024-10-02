@@ -1,0 +1,9 @@
+function dxdt = RC_lab2(t, x)
+% non ho ancora capito casa faccia questa funzione
+
+global Emax tao1 f2
+
+E = sign(Emax*sin(2*pi*f2*t));
+dxdt = -x/(tao1) + E/(tao1);
+end
+

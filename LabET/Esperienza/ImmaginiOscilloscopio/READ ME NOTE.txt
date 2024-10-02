@@ -1,0 +1,5 @@
+Caso2: f=750, c=0.33
+Caso1: f=240, c=0.33
+Caso3: f=240, c=2.2
+immagine4: sorgente sinusoidale
+R = 1.8 kOhm (sempre uguale per ogni prova)
