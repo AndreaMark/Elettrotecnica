@@ -1,0 +1,28 @@
+% dati
+R1=4; R2=8;
+
+% matrice potenziali nodli
+
+An = [...
+1/R1+1/(2*R1)+1/R2 -(1/(2*R1)+1/R2)
+-(1/(2*R1)+1/R2) 1/R1+1/(2*R1)+1/R2]
+
+C1 = cond(An)
+
+Ln=eig(An)
+
+max(Ln)/min(Ln)
+
+% matrice correnti di maglia
+
+Ac = [...
+R1+R2+R1 R2
+R2 R2+2*R1]
+
+C2 = cond(Ac)
+
+Lc=eig(Ac)
+
+max(Lc)/min(Lc)
+
+
